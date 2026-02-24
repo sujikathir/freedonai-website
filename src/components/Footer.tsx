@@ -1,16 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   return (
     <footer className="bg-charcoal text-white py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2">
-            <span className="font-display font-bold text-lg">FreeDon AI</span>
-            <span aria-hidden>🗣️</span>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo-footer.svg"
+              alt="FreeDon AI"
+              width={130}
+              height={28}
+              className="h-7 w-auto"
+            />
+          </Link>
           <nav className="flex items-center gap-6 text-sm">
             <Link href="/#how-it-works" className="text-white/80 hover:text-white transition-colors">
               How it works

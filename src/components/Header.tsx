@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   return (
@@ -13,12 +14,14 @@ export function Header() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <span className="font-display font-bold text-xl text-charcoal group-hover:text-coral transition-colors">
-            FreeDon AI
-          </span>
-          <span className="text-teal-light text-lg" aria-hidden>
-            🗣️
-          </span>
+          <Image
+            src="/logo.svg"
+            alt="FreeDon AI"
+            width={140}
+            height={32}
+            className="h-8 w-auto group-hover:opacity-90 transition-opacity"
+            priority
+          />
         </Link>
         <nav className="flex items-center gap-4">
           <Link

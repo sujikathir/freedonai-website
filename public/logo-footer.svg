@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none" aria-hidden="true">
+  <path d="M6 2h22a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H12l-6 8v-8a6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z" fill="#E07A5F"/>
+  <path d="M12 10h1.5v10H12zM16 8h1.5v14H16zM20 10h1.5v10H20z" fill="white" fill-opacity="0.95"/>
+  <text x="44" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="20" fill="white">FreeDon</text>
+  <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="20" fill="#81B29A">AI</text>
+</svg>

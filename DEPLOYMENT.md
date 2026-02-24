@@ -1,36 +1,22 @@
 # Deploy FreeDon AI to freedonai.tech (Vercel + Namecheap)
 
+**Repo:** [github.com/sujikathir/freedonai-website](https://github.com/sujikathir/freedonai-website)
+
 Follow these steps to host the site on **freedonai.tech** using Vercel and your Namecheap domain.
 
 ---
 
-## 1. Push the project to Git (if you haven’t)
+## 1. Deploy on Vercel
 
-Create a repo on GitHub (or GitLab/Bitbucket), then:
-
-```bash
-cd freedonai-website
-git init
-git add .
-git commit -m "Initial FreeDon AI website"
-git remote add origin https://github.com/YOUR_USERNAME/freedonai-website.git
-git branch -M main
-git push -u origin main
-```
+1. **Import & deploy:** [vercel.com/new/import?s=https://github.com/sujikathir/freedonai-website](https://vercel.com/new/import?s=https://github.com/sujikathir/freedonai-website)  
+   (Or: [vercel.com/new](https://vercel.com/new) → Import Git Repository → choose `sujikathir/freedonai-website`.)
+2. Sign in with **GitHub** if prompted and allow Vercel to access your repos.
+3. Keep defaults: **Framework** = Next.js, **Root** = `./`. Click **Deploy**.
+4. Wait for the build. You’ll get a URL like `freedonai-website.vercel.app` — site is live.
 
 ---
 
-## 2. Deploy on Vercel
-
-1. Go to [vercel.com](https://vercel.com) and sign in (GitHub is easiest).
-2. Click **Add New…** → **Project**.
-3. **Import** your `freedonai-website` repo.
-4. Leave defaults (Framework: Next.js, root: `./`). Click **Deploy**.
-5. Wait for the build. You’ll get a URL like `freedonai-website.vercel.app`.
-
----
-
-## 3. Add freedonai.tech as a custom domain on Vercel
+## 2. Add freedonai.tech as a custom domain on Vercel
 
 1. In the Vercel project, open **Settings** → **Domains**.
 2. Enter **freedonai.tech** and click **Add**.
@@ -40,7 +26,7 @@ git push -u origin main
 
 ---
 
-## 4. Configure DNS in Namecheap
+## 3. Configure DNS in Namecheap
 
 1. Log in at [namecheap.com](https://www.namecheap.com) → **Domain List** → **Manage** for **freedonai.tech**.
 
@@ -71,13 +57,13 @@ If you keep Namecheap’s nameservers:
 
 ---
 
-## 5. SSL (HTTPS)
+## 4. SSL (HTTPS)
 
 Vercel issues a certificate for your domain automatically. Once DNS is correct, **https://freedonai.tech** will work. No extra steps in Namecheap for SSL.
 
 ---
 
-## 6. Redirect www to non‑www (optional)
+## 5. Redirect www to non‑www (optional)
 
 In Vercel **Settings** → **Domains**, add both:
 
@@ -92,10 +78,9 @@ Set the **primary** to `freedonai.tech`. Vercel will redirect `www` to the prima
 
 | Step | Where | What |
 |------|--------|------|
-| 1 | GitHub | Push repo |
-| 2 | Vercel | Import repo, deploy |
-| 3 | Vercel → Domains | Add `freedonai.tech` |
-| 4 | Namecheap | Either Custom NS (Vercel) or A + CNAME |
-| 5 | Wait | DNS propagation; SSL auto on Vercel |
+| 1 | Vercel | Import repo, deploy |
+| 2 | Vercel → Domains | Add `freedonai.tech` |
+| 3 | Namecheap | Either Custom NS (Vercel) or A + CNAME |
+| 4 | Wait | DNS propagation; SSL auto on Vercel |
 
 If the site doesn’t load after a while, use [Vercel’s domain check](https://vercel.com/docs/concepts/projects/domains) and Namecheap’s DNS status to confirm the records match what Vercel shows.

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" fill="none" aria-hidden="true">
+  <!-- Icon: speech bubble with sound bars -->
+  <g>
+    <path d="M6 2h22a6 6 0 0 1 6 6v14a6 6 0 0 1-6 6H12l-6 8v-8a6 6 0 0 1-6-6V8a6 6 0 0 1 6-6z" fill="#E07A5F"/>
+    <path d="M12 10h1.5v10H12zM16 8h1.5v14H16zM20 10h1.5v10H20z" fill="white" fill-opacity="0.95"/>
+  </g>
+  <!-- Wordmark: FreeDon -->
+  <text x="44" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="20" fill="#2D3142">FreeDon</text>
+  <!-- Wordmark: AI (teal accent) -->
+  <text x="118" y="28" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="20" fill="#3D5A80">AI</text>
+</svg>
