@@ -36,7 +36,7 @@ See **[DEPLOYMENT.md](./DEPLOYMENT.md)** for:
 
 ## Before launch
 
-1. Replace the waitlist CTA link in `src/components/FinalCTA.tsx` (and header if needed) with your real form URL (Typeform, Google Form, Tally).
+1. **Waitlist form:** Create a form at [formspree.io](https://formspree.io), copy the form ID, and set `NEXT_PUBLIC_FORMSPREE_ID` in `.env.local` (local) and in Vercel → Settings → Environment Variables (production). See `.env.example`.
 2. Add real Privacy and Terms content in `src/app/privacy/page.tsx` and `src/app/terms/page.tsx`.
 3. Optional: add real testimonials in `src/components/Testimonials.tsx`.
 

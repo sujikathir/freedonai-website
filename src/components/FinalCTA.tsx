@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FloatingDecorations } from "./FloatingDecorations";
+import { WaitlistForm } from "./WaitlistForm";
 
 export function FinalCTA() {
   return (
@@ -26,22 +27,7 @@ export function FinalCTA() {
         >
           Get early access. We&apos;ll notify you when we launch—no credit card, no spam.
         </motion.p>
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
-          <motion.a
-            href="#waitlist"
-            whileHover={{ scale: 1.05, boxShadow: "0 12px 40px rgba(244, 162, 97, 0.4)" }}
-            whileTap={{ scale: 0.98 }}
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-coral text-white font-semibold text-lg shadow-soft"
-          >
-            Join the waitlist
-            <span aria-hidden>→</span>
-          </motion.a>
-        </motion.div>
+        <WaitlistForm />
         <p className="text-teal-light/70 text-sm mt-6">
           No credit card. We&apos;ll notify you when we launch.
         </p>
